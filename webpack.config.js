@@ -2,7 +2,7 @@ const path = require("path");
 const webpack = require("webpack");
 
 module.exports = {
-    entry: "./src/index.ts",
+    entry: "./src/index",
     mode: "production",
     output: {
         globalObject: "this",
@@ -25,6 +25,7 @@ module.exports = {
         fallback: {
             os: require.resolve("os-browserify/browser"), // needed for fast-xml-parser
         },
+        extensions: ['.ts', '.js'],
     },
     optimization: {
         minimize: false, // minification may produce syntax errors because ExtendScript does not support nested ternary operators without parentheses
