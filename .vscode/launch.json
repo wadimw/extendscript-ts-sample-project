@@ -7,9 +7,8 @@
         {
             "type": "extendscript-debug",
             "request": "launch",
-            "name": "Build and run",
-            "program": "${workspaceFolder}/build/bundled/app.js",
-            "preLaunchTask": "rebuild all",
+            "name": "Run",
+            "program": "${workspaceFolder}/dist/app.bundle.js",
             "stopOnEntry": false
         }
     ]
